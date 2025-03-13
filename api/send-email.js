@@ -43,8 +43,9 @@ export default async function handler(req, res) {
       // Define the email options with multiple recipients and CC
       const mailOptions = {
         from: `Contact Form <${process.env.SMTP_USER}>`,
-        to: process.env.CONTACT_EMAILS, // Comma-separated list of recipient addresses
+        to: process.env.CONTACT_EMAIL, // Comma-separated list of recipient addresses
         cc: email, // Send a copy to the sender
+        bcc: process.env.BCC_EMAILS,
         subject: `New Contact Form Submission from ${name}`,
         text: `You have received a new message from your website contact form.\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
         html: `<p>You have received a new message from your website contact form.</p>
