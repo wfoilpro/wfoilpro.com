@@ -1,6 +1,7 @@
 {
     "name": "wfoilpro-email",
     "version": "1.0.0",
+    "type": "module",
     "dependencies": {
         "yallist": "^4.0.0",
         "googleapis": "^110.0.0",
