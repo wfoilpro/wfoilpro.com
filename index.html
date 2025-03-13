@@ -117,8 +117,8 @@
                     offerings? Get in touch – we’re here to help.
                 </p>
                 <form
-                    action="#"
-                    method="post"
+                    action="/api/send-email"
+                    method="POST"
                     class="max-w-lg mx-auto text-left"
                 >
                     <div class="mb-4">
@@ -137,6 +137,8 @@
                             placeholder="Your Email"
                             class="w-full p-3 border border-gray-300 rounded"
                             required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            title="Please enter a valid email address."
                         />
                     </div>
                     <div class="mb-4">

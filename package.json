@@ -1,0 +1,10 @@
+{
+    "name": "wfoilpro-email",
+    "version": "1.0.0",
+    "dependencies": {
+        "googleapis": "^110.0.0",
+        "nodemailer": "^6.9.1",
+        "urlencoded-body-parser": "^2.0.0"
+    },
+    "scripts": {}
+}
