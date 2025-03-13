@@ -1,7 +1,6 @@
 import nodemailer from 'nodemailer';
 import { google } from 'googleapis';
-import pkg from 'urlencoded-body-parser';
-const { parse } = pkg;
+import parse from 'urlencoded-body-parser';
 
 const OAuth2 = google.auth.OAuth2;
 
